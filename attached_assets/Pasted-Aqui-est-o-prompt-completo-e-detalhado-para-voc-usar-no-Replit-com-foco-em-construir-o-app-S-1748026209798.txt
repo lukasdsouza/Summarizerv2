@@ -1,0 +1,52 @@
+Aqui está o prompt completo e detalhado para você usar no **Replit** com foco em construir o app **Summarizer** do zero, mantendo a mesma lógica e estrutura que você fez no n8n + Lovable:
+
+---
+
+**🧠 Prompt Replit: Criação do App “Summarizer”**
+
+> Crie um app web responsivo chamado **Summarizer**, com foco em UX moderno e integração com o n8n.
+> Use as seguintes tecnologias:
+>
+> * **HTML5, CSS3 (TailwindCSS)** para front-end estilizado
+> * **JavaScript (vanilla ou React)** para lógica da interface
+> * **Node.js com Express (back-end)** caso queira expandir depois, mas o front-end já deve funcionar de forma independente
+>
+> ### ✅ Funcionalidade principal:
+>
+> O usuário poderá:
+>
+> 1. **Tirar uma foto ou fazer upload da capa de um livro**
+> 2. **Enviar essa imagem para o endpoint do n8n**
+>
+>    * Webhook: `https://olukasouza000000.app.n8n.cloud/webhook/upload-livro`
+>    * A imagem deve ser enviada via `multipart/form-data` com o campo chamado `data`
+>
+> Após o envio:
+> 3\. Exibir uma **tela de carregamento “Resumo em geração...”**
+> 4\. Após alguns segundos, mostrar três botões de exportação:
+>
+> * **Baixar resumo (.md)** → `https://olukasouza000000.app.n8n.cloud/webhook/download-md`
+> * **Baixar resumo (.pdf)** → `https://olukasouza000000.app.n8n.cloud/webhook/download-pdf`
+> * **Abrir resumo no Notion** → `https://notion.so/SEU_LINK`
+>
+> ### ✅ Requisitos de UI/UX:
+>
+> * Visual profissional com estilo moderno e limpo (pode usar Tailwind)
+> * Totalmente responsivo (mobile-first)
+> * Animações suaves com Framer Motion ou CSS transitions
+> * Feedback visual após envio da imagem
+>
+> ### ✅ Comentários obrigatórios no código:
+>
+> * Comente todo o código explicando cada função e trecho
+> * Marque com `// <- AQUI substitua se mudar o webhook` onde o usuário pode trocar os links
+>
+> ### 🧩 Observações:
+>
+> * O back-end completo está automatizado via n8n, portanto o app não precisa processar nada localmente
+> * O objetivo é que o app funcione como **uma ponte entre o usuário e os fluxos no n8n**
+> * Se possível, usar Vite.js para empacotamento rápido se React for utilizado
+
+---
+
+Este prompt entrega um projeto 100% pronto pra usar o Replit como front-end real, conectado ao seu pipeline n8n. Se quiser que eu te gere os arquivos `index.html`, `app.js`, ou o setup Vite já iniciado, avise.
